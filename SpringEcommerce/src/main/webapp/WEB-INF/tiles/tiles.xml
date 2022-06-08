@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+<tiles-definitions>  
+
+   <!-- Base Define -->
+   <definition name="base.definition"  
+       template="/WEB-INF/layouts/layout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/view/header.jsp" />   
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/view/footer.jsp" />  
+   </definition>  
+
+   <!-- Home Page -->
+   <definition name="index" extends="base.definition">  
+       <put-attribute name="title" value="index page...." />  
+       <put-attribute name="body" value="/WEB-INF/view/index.jsp" />  
+   </definition>  
+   <definition name="register" extends="base.definition">  
+       <put-attribute name="title" value="signup here" />  
+       <put-attribute name="body" value="/WEB-INF/view/register.jsp" />  
+   </definition>
+   <definition name="register-success" extends="base.definition">  
+       <put-attribute name="title" value="signup here" />  
+       <put-attribute name="body" value="/WEB-INF/view/register-success.jsp" />  
+   </definition>
+   <definition name="custom-loginform" extends="base.definition">  
+       <put-attribute name="title" value="login page" />  
+       <put-attribute name="body" value="/WEB-INF/view/custom-loginform.jsp" />  
+   </definition>
+   <definition name="base.definition.main"  
+       template="/WEB-INF/layouts/layout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/view/header-main.jsp" />   
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/view/footer.jsp" />  
+   </definition>
+   <definition name="productForm" extends="base.definition.main">  
+       <put-attribute name="title" value="add products here" />  
+       <put-attribute name="body" value="/WEB-INF/view/productForm.jsp" />  
+   </definition>
+   <definition name="product-success" extends="base.definition.main">  
+       <put-attribute name="title" value="add products here" />  
+       <put-attribute name="body" value="/WEB-INF/view/product-success.jsp" />  
+   </definition>
+   <definition name="plp-page" extends="base.definition.main">  
+       <put-attribute name="title" value="plp page" />  
+       <put-attribute name="body" value="/WEB-INF/view/plp-page.jsp" />  
+   </definition>
+   <definition name="pdp-page" extends="base.definition.main">  
+       <put-attribute name="title" value="pdp page" />  
+       <put-attribute name="body" value="/WEB-INF/view/pdp-page.jsp" />  
+   </definition>
+   <definition name="viewcart" extends="base.definition.main">  
+       <put-attribute name="title" value="cart" />  
+       <put-attribute name="body" value="/WEB-INF/view/viewcart.jsp" />  
+   </definition>
+   <definition name="order-page" extends="base.definition.main">  
+       <put-attribute name="title" value="order" />  
+       <put-attribute name="body" value="/WEB-INF/view/vieworders.jsp" />  
+   </definition>
+   <definition name="main" extends="base.definition.main">  
+       <put-attribute name="title" value="main page" />  
+       <put-attribute name="body" value="/WEB-INF/view/main.jsp" />  
+   </definition>
+   <definition name="access-denied" extends="base.definition.main">  
+       <put-attribute name="title" value="main page" />  
+       <put-attribute name="body" value="/WEB-INF/view/access-denied.jsp" />  
+   </definition>
+   </tiles-definitions>
