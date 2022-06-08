@@ -1,0 +1,5 @@
+com\springsecurity\config\MainConfig.class
+com\springsecurity\config\MySecurityConfig.class
+com\springsecurity\config\MyDispatcherServletInitializer.class
+com\springsecurity\controller\HomeController.class
+com\springsecurity\config\SecurityInitializer.class
